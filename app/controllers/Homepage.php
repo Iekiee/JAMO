@@ -1,16 +1,25 @@
 <?php
 
-class Homepage extends BaseController 
+class Homepage extends BaseController
 {
-    public function index() 
+
+    private HomepageModel $homepageModel;
+
+    public function __construct()
     {
+        $this->homepageModel = $this->model('HomepageModel');
+    }
+
+    public function index()
+    {
+
+        $members = $this->homepageModel->getTeamMembers();
+        // $profilepicture = $members->profilepicture;
+
         $data = [
-            'title' => 'Homepage!'
+            'members' => $members
         ];
 
         $this->view('Homepage/index', $data);
     }
 }
-
-    
-

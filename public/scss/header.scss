@@ -1,0 +1,249 @@
+@import '../scss/variables.scss';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header_content {
+
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: 0%;
+    width: 100%;
+
+    font-size: 1.5rem;
+    background-color: black;
+    font-family: 'Titillium Web', sans-serif;
+
+    border-bottom: .3rem solid transparent;
+    border-image: linear-gradient(0.25turn, $purple, $red);
+    border-image-slice: 1;
+
+
+
+.page_links {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+    ul {
+        list-style: none;
+        display: flex;
+
+
+
+        li {
+            @media only screen and (max-width: 425px) {
+            display: none;
+            justify-content: center;
+            }
+
+            a {
+                padding: .5rem;
+                margin: .5rem;
+                background-image: linear-gradient(to right,
+                        $purple,
+                        $red 50%,
+                        $white 50%);
+                background-size: 200% 100%;
+                background-position: -100%;
+                position: relative;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                &::before {
+                    content: '';
+                    background: linear-gradient(to right, $purple, $red);
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    width: 0;
+                    height: 3px;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    background-position: 0;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+
+
+
+            &:first-of-type {
+                @media only screen and (max-width: 425px) {
+                    display: block;
+                }
+
+                margin-right: 2vw;
+
+                img {
+                    background-color: black;
+                    padding: 0rem;
+                    height: 4rem;
+                    margin-left: 0rem;
+                }
+            }
+        }
+    }
+}
+
+.burger_menu {
+   
+    display: none;
+
+    @media only screen and (max-width: 425px) {
+        display: block;
+        z-index: 1;
+    }
+
+    div {
+        height: .5rem;
+        border-bottom: solid;
+        border-width: .7rem;
+        width: 4rem;
+        // margin-right: 10rem;
+
+    }
+
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+
+    background-image: linear-gradient(to right, $purple, $red);
+    height: 4rem;
+    border-radius: .1rem;
+    //    border-top-left-radius: .2rem;
+
+}
+
+
+
+.social_links {
+
+
+
+    @media only screen and (max-width: 425px) {
+        display: none;
+        // display: none;
+        // background-color: black;
+        background-image: none;
+        // display: flex;
+        // display: none;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // top: 0;
+        // // top: 20rem;
+        // height: 30rem;
+        // align-items: center;
+        // background-image: none;
+
+        justify-content: center;
+        width: 8rem;
+       
+
+    }
+
+    color: white;
+    display: flex;
+    height: 100vh;
+    // border-bottom-left-radius: 2rem;
+
+    position: absolute;
+
+
+    transition: top 2.5s,
+    opacity 0.5s;
+
+    right: 0px;
+    background-image: linear-gradient($red, $purple);
+
+    ul {
+        @media only screen and (max-width: 425px) {
+            // display: none;
+            // flex-direction: row;
+            justify-content: center;
+           
+
+         
+            // gap: 1rem;
+
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 1rem;
+        margin: 0;
+
+        li {
+            margin-bottom: 1.5rem;
+
+            @media only screen and (max-width: 425px) {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+
+        img {
+            height: 2.5rem;
+        }
+    }
+
+    blockquote {
+        margin: 0;
+
+    }
+
+    .hidden {
+        display: none;
+
+    }
+
+}
+
+.show {
+    display: flex;
+}
+
+@media only screen and (max-width: 425px) {
+    .visible {
+        // display: none;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.925);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        ul {
+            padding-left: 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+
+            li {
+                display: block;
+                // text-align: left;
+                margin-bottom: 2rem;
+                font-size: 3rem;
+
+            }
+
+        }
+    
+}
+
+}
+}

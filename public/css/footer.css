@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+span {
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span::before {
+  content: "";
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3.5px;
+  transition: all 0.3s ease-in-out;
+  border-bottom-right-radius: 20rem;
+}
+span:hover {
+  background-position: 0;
+}
+span:hover::before {
+  width: 100%;
+}
+
+.footer_content {
+  margin-top: 15rem;
+  border-top: 0.3rem solid transparent;
+  border-image: linear-gradient(0.25turn, #b217e1, #ff0051);
+  border-image-slice: 1;
+  display: flex;
+  border-top-style: solid;
+  font-family: "Titillium Web";
+  background-color: black;
+  color: #fff1fa;
+}
+@media only screen and (max-width: 425px) {
+  .footer_content {
+    display: none;
+  }
+}
+.footer_content .footer_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #8c5f99;
+}
+.footer_content .page_links, .footer_content .contact_info, .footer_content .socialmedia_links {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #96859a;
+}
+.footer_content .page_links p, .footer_content .contact_info p, .footer_content .socialmedia_links p {
+  margin: 0;
+}
+.footer_content .page_links p:first-child, .footer_content .contact_info p:first-child, .footer_content .socialmedia_links p:first-child {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff1fa;
+}
+.footer_content .page_links a, .footer_content .contact_info a, .footer_content .socialmedia_links a {
+  color: #96859a;
+}
+.footer_content .icon {
+  margin: 2rem;
+}
+.footer_content .icon div {
+  border-image: linear-gradient(0.25turn, #ff0051, #b217e1);
+  border-image-slice: 1;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem;
+  border-style: solid;
+}
+.footer_content .icon div img {
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.footer_content .icon div:first-child {
+  background-image: linear-gradient(0.25turn, #b217e1, #ff0051);
+  border: none;
+  margin-left: 4.3rem;
+  color: black;
+}
+.footer_content .icon_last {
+  margin: 2rem;
+  background-image: linear-gradient(0.25turn, #b217e1, #ff0051);
+  color: black;
+  width: fit-content;
+  height: 3rem;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.footer_content .icon_last:last-child {
+  border-image: linear-gradient(0.25turn, #ff0051, #b217e1);
+  border-image-slice: 1;
+}
+.footer_content .icon_last:last-child p {
+  margin: 0;
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer_content img {
+  justify-content: start;
+  height: 6rem;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=footer.css.map */

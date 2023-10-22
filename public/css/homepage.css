@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+span {
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span::before {
+  content: "";
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3.5px;
+  transition: all 0.3s ease-in-out;
+  border-bottom-right-radius: 20rem;
+}
+span:hover {
+  background-position: 0;
+}
+span:hover::before {
+  width: 100%;
+}
+
+.header_content .page_links ul li:nth-of-type(2) a {
+  background-position: 0;
+}
+.header_content .page_links ul li:nth-of-type(2) a::before {
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.hompage_content {
+  padding-top: 10vh;
+  font-family: "Titillium Web", sans-serif;
+  color: #fff1fa;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content {
+    overflow-x: hidden;
+    margin-bottom: 20rem;
+  }
+}
+.hompage_content table {
+  font-size: 4rem;
+}
+.hompage_content .our_team {
+  margin: 5rem;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content .our_team {
+    margin: 1.5rem;
+  }
+}
+.hompage_content .our_team h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin: 0;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content .our_team h1 {
+    font-size: 3rem;
+  }
+}
+.hompage_content .our_team h1 u {
+  font-weight: 700;
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hompage_content .our_team .persons {
+  display: flex;
+  gap: 2rem;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content .our_team .persons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hompage_content .our_team .persons .person {
+  width: 40vh;
+  height: 50vh;
+  border: 0.7rem solid transparent;
+  border-bottom: 7rem solid transparent;
+  border-image: linear-gradient(0.25turn, #b217e1, #ff0051);
+  border-image-slice: 1;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content .our_team .persons .person {
+    border: 0.7rem solid transparent;
+    border-bottom: 7rem solid transparent;
+    border-image: linear-gradient(to top, #b217e1, #ff0051);
+    border-image-slice: 1;
+  }
+}
+.hompage_content .our_team .persons .person:nth-child(even) {
+  border: 0.7rem solid transparent;
+  border-bottom: 7rem solid transparent;
+  border-image: linear-gradient(0.25turn, #ff0051, #b217e1);
+  border-image-slice: 1;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content .our_team .persons .person:nth-child(even) {
+    border: 0.7rem solid transparent;
+    border-bottom: 7rem solid transparent;
+    border-image: linear-gradient(to top, #ff0051, #b217e1);
+    border-image-slice: 1;
+  }
+}
+.hompage_content .our_team .persons span {
+  justify-content: flex-end;
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hompage_content .our_team .persons h3 {
+  margin-bottom: 0;
+  padding: 0rem 0rem 0rem 1rem;
+}
+.hompage_content .our_team .persons p {
+  margin-top: 0;
+  padding: 0rem 1rem 0rem 1rem;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content .our_team .persons p {
+    overflow-x: hidden;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}
+.hompage_content .our_team .persons p:first-child {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-right: 3rem;
+}
+.hompage_content .our_team .persons img {
+  height: 40vh;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 425px) {
+  .hompage_content .banner_carousel {
+    display: none;
+  }
+}
+.hompage_content .banner_carousel .picture a {
+  text-decoration: none;
+}
+.hompage_content .banner_carousel .picture .genre_discription {
+  box-shadow: 4px 4px 10px rgba(108, 15, 79, 0.3);
+  position: absolute;
+  top: -100px;
+  opacity: 0;
+  transition: top 2.5s, opacity 0.5s;
+  display: flex;
+  padding-top: 1rem;
+  font-size: 1;
+  background-image: linear-gradient(to left, rgba(255, 0, 81, 0.597), rgba(178, 23, 225, 0.4));
+  height: fit-content;
+  border-bottom-right-radius: 20rem;
+  font-family: "Titillium Web";
+  font-weight: 700;
+  font-size: 2rem;
+}
+.hompage_content .banner_carousel .picture .genre_discription .title {
+  padding-top: 2rem;
+  width: 15rem;
+  text-align: center;
+}
+.hompage_content .banner_carousel .picture .genre_discription .discover_button {
+  background-color: #fff1fa;
+  color: black;
+  border-bottom-right-radius: 20rem;
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-left: 1rem;
+}
+.hompage_content .banner_carousel .picture .genre_discription .discover_button span {
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hompage_content .banner_carousel .picture .active {
+  top: 6rem;
+  opacity: 1;
+}
+.hompage_content .banner_carousel img {
+  height: 90vh;
+}
+
+/*# sourceMappingURL=homepage.css.map */

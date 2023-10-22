@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+span {
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span::before {
+  content: "";
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3.5px;
+  transition: all 0.3s ease-in-out;
+  border-bottom-right-radius: 20rem;
+}
+span:hover {
+  background-position: 0;
+}
+span:hover::before {
+  width: 100%;
+}
+
+/*# sourceMappingURL=variables.css.map */

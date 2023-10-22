@@ -1,0 +1,283 @@
+@import '../scss/variables.scss';
+
+.header_content {
+    .page_links {
+
+        ul {
+            li {
+
+                &:nth-of-type(2) {
+                    a {
+                        background-position: 0;
+
+                        &::before {
+                            width: 100%;
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+
+}
+
+.hompage_content {
+    @media only screen and (max-width: 425px) {
+        overflow-x:hidden;
+        margin-bottom: 20rem;
+
+    }
+   
+    table {
+        font-size: 4rem;
+    }
+
+    padding-top: 10vh;
+
+    font-family: 'Titillium Web',
+    sans-serif;
+
+
+    color: $white;
+
+
+
+    .our_team {
+        margin: 5rem;
+        @media only screen and (max-width: 425px) {
+            margin: 1.5rem;
+        }
+
+        // background-color: red;
+        // height: 150vh;
+        // display: flex;
+
+
+        h1 {
+            @media only screen and (max-width: 425px) {
+                font-size: 3rem;
+
+            }
+
+            font-size: 5rem;
+            font-weight: 300;
+            // background-color: red;
+            margin: 0;
+
+            u {
+                font-weight: 700;
+                background: linear-gradient(to right, $purple, $red);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .persons {
+            display: flex;
+
+            @media only screen and (max-width: 425px) {
+                flex-direction: column;
+                align-items: center;
+
+
+            }
+
+
+
+            // flex-direction: column-reverse;
+            gap: 2rem;
+
+
+            // width: 40vh;
+            // height: 40vh;
+
+            .person {
+
+                width: 40vh;
+                height: 50vh;
+                border: .7rem solid transparent;
+                border-bottom: 7rem solid transparent;
+
+
+                border-image: linear-gradient(0.25turn, $purple, $red);
+                border-image-slice: 1;
+
+                @media only screen and (max-width: 425px) {
+                    border: .7rem solid transparent;
+                    border-bottom: 7rem solid transparent;
+
+
+                    border-image: linear-gradient(to top, $purple, $red);
+                    border-image-slice: 1;
+
+                }
+
+                &:nth-child(even) {
+                    border: .7rem solid transparent;
+                    border-bottom: 7rem solid transparent;
+
+
+                    border-image: linear-gradient(0.25turn, $red, $purple);
+                    border-image-slice: 1;
+
+                    @media only screen and (max-width: 425px) {
+                        border: .7rem solid transparent;
+                        border-bottom: 7rem solid transparent;
+
+
+                        border-image: linear-gradient(to top, $red, $purple);
+                        border-image-slice: 1;
+
+                    }
+                }
+
+                // padding: 2rem;
+
+            }
+
+
+            span {
+                justify-content: flex-end;
+                font-size: 4rem;
+                font-weight: 700;
+
+                background: linear-gradient(to right, $purple, $red);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            h3 {
+                margin-bottom: 0;
+                padding: 0rem 0rem 0rem 1rem;
+            }
+
+            p {
+                @media only screen and (max-width: 425px) {
+                    overflow-x:hidden;
+                    padding: 0rem 1rem 0rem 1rem;
+                   
+                }
+                margin-top: 0;
+                // padding: 1rem;
+                padding: 0rem 1rem 0rem 1rem;
+
+                &:first-child {
+                    font-size: 2rem;
+                    margin-top: 0;
+                    margin-right: 3rem;
+
+
+                    //    margin: 3rem;
+                }
+
+
+            }
+
+            img {
+                height: 40vh;
+                padding: 0;
+                margin: 0;
+            }
+
+        }
+    }
+
+    .banner_carousel {
+        @media only screen and (max-width: 425px) {
+            display: none;
+        }
+
+        // display: flex;
+
+        // justify-content: center;
+        .picture {
+            a {
+                text-decoration: none;
+                // display: flex;
+            }
+
+            .genre_discription {
+                box-shadow: 4px 4px 10px rgba(108, 15, 79, 0.3);
+
+                position: absolute;
+                top: -100px;
+                opacity: 0;
+                transition: top 2.5s, opacity 0.5s;
+
+                display: flex;
+                // padding-top: 0;
+                padding-top: 1rem;
+                // margin-top: 0;
+                font-size: 1;
+                background-image: linear-gradient(to left, rgba(255, 0, 81, 0.597), rgba(178, 23, 225, 0.4));
+                height: fit-content;
+                border-bottom-right-radius: 20rem;
+                font-family: 'Titillium Web';
+                font-weight: 700;
+                font-size: 2rem;
+
+
+
+                .title {
+                    padding-top: 2rem;
+                    width: 15rem;
+                    text-align: center;
+                    // padding-left: 1rem;
+                    // text-decoration: underline;
+
+
+                }
+
+                .discover_button {
+
+                    background-color: $white;
+                    color: black;
+                    border-bottom-right-radius: 20rem;
+
+                    padding: 2rem;
+                    padding-right: 4rem;
+                    padding-left: 1rem;
+
+
+
+                    span {
+                        background: linear-gradient(to right, $purple, $red);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+
+                    }
+
+
+
+                }
+            }
+
+
+            .active {
+                top: 6rem;
+                opacity: 1;
+            }
+
+
+
+
+        }
+
+        img {
+            height: 90vh;
+        }
+    }
+
+}

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+span {
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span::before {
+  content: "";
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3.5px;
+  transition: all 0.3s ease-in-out;
+  border-bottom-right-radius: 20rem;
+}
+span:hover {
+  background-position: 0;
+}
+span:hover::before {
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header_content {
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  margin-top: 0%;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: black;
+  font-family: "Titillium Web", sans-serif;
+  border-bottom: 0.3rem solid transparent;
+  border-image: linear-gradient(0.25turn, #b217e1, #ff0051);
+  border-image-slice: 1;
+}
+.header_content .page_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header_content .page_links ul {
+  list-style: none;
+  display: flex;
+}
+@media only screen and (max-width: 425px) {
+  .header_content .page_links ul li {
+    display: none;
+    justify-content: center;
+  }
+}
+.header_content .page_links ul li a {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-image: linear-gradient(to right, #b217e1, #ff0051 50%, #fff1fa 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header_content .page_links ul li a::before {
+  content: "";
+  background: linear-gradient(to right, #b217e1, #ff0051);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.header_content .page_links ul li a:hover {
+  background-position: 0;
+}
+.header_content .page_links ul li a:hover::before {
+  width: 100%;
+}
+.header_content .page_links ul li:first-of-type {
+  margin-right: 2vw;
+}
+@media only screen and (max-width: 425px) {
+  .header_content .page_links ul li:first-of-type {
+    display: block;
+  }
+}
+.header_content .page_links ul li:first-of-type img {
+  background-color: black;
+  padding: 0rem;
+  height: 4rem;
+  margin-left: 0rem;
+}
+.header_content .burger_menu {
+  display: none;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  background-image: linear-gradient(to right, #b217e1, #ff0051);
+  height: 4rem;
+  border-radius: 0.1rem;
+}
+@media only screen and (max-width: 425px) {
+  .header_content .burger_menu {
+    display: block;
+    z-index: 1;
+  }
+}
+.header_content .burger_menu div {
+  height: 0.5rem;
+  border-bottom: solid;
+  border-width: 0.7rem;
+  width: 4rem;
+}
+.header_content .social_links {
+  color: white;
+  display: flex;
+  height: 100vh;
+  position: absolute;
+  transition: top 2.5s, opacity 0.5s;
+  right: 0px;
+  background-image: linear-gradient(#ff0051, #b217e1);
+}
+@media only screen and (max-width: 425px) {
+  .header_content .social_links {
+    display: none;
+    background-image: none;
+    justify-content: center;
+    width: 8rem;
+  }
+}
+.header_content .social_links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+@media only screen and (max-width: 425px) {
+  .header_content .social_links ul {
+    justify-content: center;
+  }
+}
+.header_content .social_links ul li {
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 425px) {
+  .header_content .social_links ul li:first-child {
+    display: none;
+  }
+}
+.header_content .social_links ul img {
+  height: 2.5rem;
+}
+.header_content .social_links blockquote {
+  margin: 0;
+}
+.header_content .social_links .hidden {
+  display: none;
+}
+.header_content .show {
+  display: flex;
+}
+@media only screen and (max-width: 425px) {
+  .header_content .visible {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header_content .visible ul {
+    padding-left: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header_content .visible ul li {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,35 @@
+$purple: #b217e1;
+$red: #ff0051;
+$white: #fff1fa;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+// $ourFont: font-family: 'Titillium Web', sans-serif;
+
+
+    span {
+        background-size: 200% 100%;
+        background-position: -100%;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::before {
+            content: '';
+            background: linear-gradient(to right, $purple, $red);
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3.5px;
+            transition: all 0.3s ease-in-out;
+            border-bottom-right-radius: 20rem;
+        }
+
+        &:hover {
+            background-position: 0;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
