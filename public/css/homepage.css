@@ -153,6 +153,10 @@ body {
     display: none;
   }
 }
+.hompage_content .banner_carousel .picture iframe {
+  width: 100%;
+  height: 100vh;
+}
 .hompage_content .banner_carousel .picture a {
   text-decoration: none;
 }

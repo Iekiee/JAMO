@@ -29,6 +29,8 @@
                 <img src="/public/assests/automotive/BMW M6 2015.webp" alt="">
                 <img src="/public/assests/automotive/Mercedes-Benz GLC 43 AMGBACK.webp" alt="">
 
+                <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1hXvccHHU60?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
             </div>
 
             <div class="picture">
@@ -42,18 +44,25 @@
                 <img src="/public/assests/restaurants/spiegel03.webp" alt="">
 
             </div>
+
+
         </div>
 
 
-        <!-- <div class="banner_picture"> -->
-        <!-- <div class="titel_genre">Automotive</div> -->
-        <!-- <div class="automotive">
-                <img src="/public/assests/Mercedes-Benz GLC 43 AMG.webp" alt="">
-                <img src="/public/assests/Mercedes-Benz GLC 43 AMGBACK.webp" alt="">
-                <img src="/public/assests/BMW M6 2015.webp">
-                <img src="/public/assests/BMW M6 2015.webp">
+        <div class="picture">
+            <div class="genre_discription">
+                <div class="title">restaurants</div> <a href="">
+                    <div class="discover_button"><span>Discover more</span></div>
+                </a>
             </div>
-        </div> -->
+            <!-- <img src="/public/assests/restaurants/spiegel01.jpg" alt=""> -->
+            <!-- <img src="/public/assests/restaurants/spiegel03.webp" alt=""> -->
+            <video controls width="40rem" autoplay muted>
+                <source src="/public/assests/reels/CompilatieTIKTOKFORM.mov" type="video/mp4">
+                <!-- <p>Sorry, Your Browser Doesn't Support Embedded Videos. Here's the <a href="https://www.youtube.com/watch?v=yDzQDeaW6O8">Link to the video</a></p> -->
+            </video>
+        </div>
+
 
         <?php
         $memberInfo = '';
@@ -76,13 +85,13 @@
             <div class="persons">
                 <?= $memberInfo ?>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat, 
-                    nisl non mattis malesuada, quam elit blandit urna, id consectetur risus lorem sed quam. 
-                    Sed euismod sapien at nulla tincidunt, id venenatis justo eleifend. Nullam euismod eget ante vel laoreet. 
-                    Sed auctor, metus in suscipit eleifend, augue felis dapibus neque, a bibendum quam quam quis ex. Suspendisse 
-                </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat,
+                        nisl non mattis malesuada, quam elit blandit urna, id consectetur risus lorem sed quam.
+                        Sed euismod sapien at nulla tincidunt, id venenatis justo eleifend. Nullam euismod eget ante vel laoreet.
+                        Sed auctor, metus in suscipit eleifend, augue felis dapibus neque, a bibendum quam quam quis ex. Suspendisse
+                    </p>
 
-                <span>Get in contact!</span>
+                    <span>Get in contact!</span>
                 </div>
             </div>
 
